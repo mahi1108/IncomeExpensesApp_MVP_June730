@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Type :"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/type"
+        android:id="@+id/sp1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Money"
+        android:id="@+id/money"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        android:id="@+id/desc"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="ViewExp"
+                android:id="@+id/view_exp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="ViewInc"
+            android:id="@+id/view_inc"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="IncExp"
+            android:id="@+id/inc_exp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="AddExp"
+            android:id="@+id/add_exp"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="AddInc"
+            android:id="@+id/add_inc"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lview"></ListView>
+
+</LinearLayout>
